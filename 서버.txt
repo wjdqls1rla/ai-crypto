@@ -1,0 +1,43 @@
+서버이름: s187925f7df1
+서버 접속용 공인 IP : 106.10.57.227
+외부 포트: 2023
+비공인 IP: 10.41.74.132
+관리자 이름: root
+비밀번호: P7EUA9Pg7nAi
+
+서버 접속 명령어: ssh root@106.10.57.227 -p 2023
+Git 로컬저장소 위치: /root/AiCryptoProject
+
+github 연동 git clone [github URL].git 
+github 저장소 위치 확인: git remote -v
+github 로컬 저장소 접속: cd [your_git]
+작업 위치 내 파일 확인: ls
+파일 삭제: rm [filename]
+프로그램 실행:python [filename]
+프로그램 나가기: ctrl+z
+프로세스 확인: ps -ef
+프로세스 종료: kill -9 PID
+백그라운드 실행: bg
+
+**주의**
+input 값 입력시 string은 '' 안에 넣어서 입력 ex) 'Bithumb'
+
+
+tmux
+tmux 설치: apt-get install tmux
+세션 생성: tmux new -s [session name]
+세션 목록: tmux ls
+세션 최소화: ctrl + b, d
+세션 재접속: tmux attach -t [session name]
+윈도우 생성: ctrl + b, c
+윈도우 종료: ctrl + d
+윈도우 목록: ctrl + b, w
+
+윈도우 머신에서 서버 파일 가져오기:  scp -P [port] [Username]@[ServerIP]:[FileDirectory] '[WindowsSavingDirectory]'
+**파일 전송 전 리눅스 ssh 서버 설치: sudo apt install openssh-server**
+**파일 전송 전 관리자 권한 cmd에서 net start sshd 입력**
+**방화벽 -> 고급설정 -> 포트 income 설정**
+
+
+
+
